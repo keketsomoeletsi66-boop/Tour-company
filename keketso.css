@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* Header */
+header{
+    background:#003366;
+    color:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.logo h1{
+    font-size:32px;
+}
+
+.logo p{
+    font-size:14px;
+}
+
+/* Navigation */
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:gold;
+}
+
+/* Hero Section */
+.hero{
+    background:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');
+    background-size:cover;
+    background-position:center;
+    height:400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-text{
+    background:rgba(0,0,0,0.5);
+    padding:30px;
+    border-radius:10px;
+}
+
+.hero-text h2{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+/* About */
+.about{
+    padding:40px;
+    text-align:center;
+}
+
+.about h2{
+    margin-bottom:20px;
+    color:#003366;
+}
+
+.about p{
+    margin-bottom:20px;
+    line-height:1.8;
+}
+
+/* Gallery */
+.gallery-home{
+    padding:40px;
+    text-align:center;
+}
+
+.gallery-home h2{
+    margin-bottom:20px;
+    color:#003366;
+}
+
+.images{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.images img{
+    width:300px;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* External Link */
+.external-link{
+    padding:30px;
+    text-align:center;
+}
+
+.external-link a{
+    color:#003366;
+    font-weight:bold;
+}
+
+/* Social Media */
+.social-media{
+    text-align:center;
+    padding:30px;
+}
+
+.social-media a{
+    text-decoration:none;
+    margin:10px;
+    background:#003366;
+    color:white;
+    padding:10px 15px;
+    border-radius:5px;
+}
+
+.social-media a:hover{
+    background:gold;
+    color:black;
+}
+
+/* Footer */
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav ul{
+        flex-direction:column;
+        margin-top:20px;
+    }
+
+    .hero-text h2{
+        font-size:28px;
+    }
+
+    .images img{
+        width:90%;
+    }
+}
